@@ -1,0 +1,11 @@
+.places{
+    padding: 92px 145px 0 148px;
+    
+}
+
+.place{
+
+    display: grid;
+    grid-template-columns: 460px, 464px;
+    grid-template-rows: 152px, 460px;
+}
