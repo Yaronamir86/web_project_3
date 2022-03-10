@@ -34,7 +34,7 @@
 }
 
 .cover__title {
-   /* position: absolute;
+  /* position: absolute;
    top: 243px;
   right: 264px; */
   font-family: "Inter";
@@ -48,8 +48,6 @@
   text-align: center;
   z-index: 4;
 }
-
-
 
 .cover__subtitle {
   font-family: "Inter";
@@ -99,17 +97,16 @@
 .cover__button:hover {
   cursor: url(../images/cursor.png), pointer;
 }
+
 @media screen and (max-width: 768px) {
   .cover {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
   }
- 
-  }
+
   .cover__image {
     width: 1184px;
     margin: 0;
   }
 }
-
