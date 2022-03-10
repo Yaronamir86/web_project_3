@@ -11,3 +11,8 @@
   letter-spacing: 0em;
   text-align: right;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 88px 302px 24px 301px;
+  }
+}

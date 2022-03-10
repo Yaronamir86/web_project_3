@@ -1,7 +1,18 @@
 .cover {
-  max-width: 1184px;
+  width: calc(100% - 96px);
   margin: auto;
   position: relative;
+  background-image: url("../images/cover__background.png");
+  background-position: center;
+  background-size: cover;
+  /*adding*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 32px;
+  padding: 243px 0;
 }
 
 .cover::before {
@@ -18,13 +29,14 @@
 
 .cover:hover::before {
   opacity: 0.8;
+  transition: 0.4s;
   cursor: url(../images/Vector\ 1.png), pointer;
 }
 
 .cover__title {
-  position: absolute;
-  top: 243px;
-  right: 264px;
+   /* position: absolute;
+   top: 243px;
+  right: 264px; */
   font-family: "Inter";
   font-size: 72px;
   font-style: normal;
@@ -37,6 +49,8 @@
   z-index: 4;
 }
 
+
+
 .cover__subtitle {
   font-family: "Inter";
   font-size: 18px;
@@ -45,9 +59,9 @@
   line-height: 22px;
   letter-spacing: 0em;
   margin: 0;
-  position: absolute;
+  /* position: absolute;
   top: 351px;
-  right: 452px;
+  right: 452px; */
   width: 280px;
   height: 66px;
   z-index: 4;
@@ -68,11 +82,8 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 48px;
   letter-spacing: 0em;
-  position: absolute;
-  top: 449px;
-  right: 526px;
   width: 137px;
   height: 48px;
   background: #0278fe;
@@ -82,8 +93,23 @@
   margin: 0;
   padding: 0;
   z-index: 4;
+  text-decoration: none;
 }
 
 .cover__button:hover {
   cursor: url(../images/cursor.png), pointer;
 }
+@media screen and (max-width: 768px) {
+  .cover {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+ 
+  }
+  .cover__image {
+    width: 1184px;
+    margin: 0;
+  }
+}
+

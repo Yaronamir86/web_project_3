@@ -1,18 +1,30 @@
 .places {
-  padding: 92px 148px 0 145px;
+  padding-top: 92px;
+  max-width: 984px;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .place {
   display: grid;
-  grid-template-columns: 460px 484px;
-  grid-template-rows: 152px 460px;
+  grid-template-columns: minmax(200px, 1fr) 1fr;
+  grid-template-rows: 152px 460px 48px;
   column-gap: 40px;
   row-gap: 48px;
   padding-bottom: 80px;
+  grid-template-areas:
+    " place__title place__website"
+    "place__image place__paragraph"
+    "place__button place__paragraph";
 }
 
 .place:nth-child(3) {
   grid-template-rows: 76px 460px;
+}
+.place:nth-child(5) {
+  padding-top: 74px;
 }
 
 .place__title {
@@ -22,7 +34,7 @@
   font-weight: 900;
   line-height: 76px;
   letter-spacing: 0em;
-  width: 460px;
+  max-width: 100%;
   margin: 0;
   align-self: flex-end;
 }
@@ -54,6 +66,9 @@
   letter-spacing: 0em;
   margin: 0;
 }
+.place__image {
+  max-width: 100%;
+}
 
 .place__paragraph {
   font-family: "Inter";
@@ -62,7 +77,7 @@
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
-  width: 484px;
+  max-width: 100%;
   padding-top: 25px;
 }
 
@@ -70,12 +85,12 @@
   padding: 0;
 }
 
-.place__botton {
+.place__button {
   font-family: "Inter";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 48px;
   letter-spacing: 0em;
   background: #0278fe;
   border-radius: 4px;
@@ -87,7 +102,61 @@
   padding: 0;
   margin: 0;
   border: none;
+  text-decoration: none;
+  text-align: center;
+  text
 }
 .place__botton:hover {
   cursor: url(../images/cursor.png), pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: 720px;
+    padding-top: 92px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .place {
+    display: grid;
+    grid-template-columns: 340px 352px;
+    grid-template-rows: 46px 340px;
+    column-gap: 28px;
+    row-gap: 48px;
+    padding-top: 44px;
+  }
+  .place:first-child {
+    padding-top: 0;
+  }
+
+  .place:nth-child(3) {
+    grid-template-rows: 46px 340px;
+  }
+  .place:nth-child(4) {
+    grid-template-rows: 92px 340px;
+  }
+  .place:nth-child(5) {
+    padding-top: 230px;
+    padding-bottom: 92px;
+  }
+
+  .place__title {
+    font-family: "Inter";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 46px;
+    letter-spacing: 0em;
+  }
+
+  .place__paragraph {
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+  }
 }
