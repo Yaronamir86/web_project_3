@@ -3,7 +3,7 @@
   padding-bottom: 24px;
   display: flex;
   justify-content: center;
-  }
+}
 
 .footer__copyrights {
   font-family: "Inter";
@@ -14,4 +14,8 @@
   letter-spacing: 0em;
   text-align: right;
 }
-
+@media screen and (max-width: 320px) {
+  .footer {
+    padding-top: 64px;
+  }
+}

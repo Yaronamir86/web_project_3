@@ -1,11 +1,10 @@
 .cover {
-  width: calc(100% - 96px);
-  margin: auto;
+  width: 1184px;
   position: relative;
+  margin: auto;
   background-image: url("../images/cover__background.png");
   background-position: center;
   background-size: cover;
-  /*adding*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,9 +33,6 @@
 }
 
 .cover__title {
-  /* position: absolute;
-   top: 243px;
-  right: 264px; */
   font-family: "Inter";
   font-size: 72px;
   font-style: normal;
@@ -57,9 +53,6 @@
   line-height: 22px;
   letter-spacing: 0em;
   margin: 0;
-  /* position: absolute;
-  top: 351px;
-  right: 452px; */
   width: 280px;
   height: 66px;
   z-index: 4;
@@ -108,5 +101,37 @@
   .cover__image {
     width: 1184px;
     margin: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .cover {
+    max-width: 320px;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    padding-bottom: 0;
+    gap: 16px;
+    height: 254px;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 35px;
+    text-align: center;
+  }
+  .cover__subtitle {
+    margin: 0;
+    padding: 0;
+    height: 48px;
+  }
+  .cover__subtitle-item {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
   }
 }
