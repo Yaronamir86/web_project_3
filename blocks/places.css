@@ -9,22 +9,11 @@
 
 .place {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) 1fr;
-  grid-template-rows: 152px 460px 48px;
+  grid-template-columns: minmax(460px, 1fr) 1fr;
+  grid-template-rows: auto auto 1fr;
   column-gap: 40px;
   row-gap: 48px;
   padding-bottom: 80px;
-  grid-template-areas:
-    " place__title place__website"
-    "place__image place__paragraph"
-    "place__button place__paragraph";
-}
-
-.place:nth-child(3) {
-  grid-template-rows: 76px 460px;
-}
-.place:nth-child(5) {
-  padding-top: 74px;
 }
 
 .place__title {
@@ -40,7 +29,7 @@
 }
 
 .place__website {
-  width: 456px;
+  max-width: 456px;
   align-self: flex-end;
 }
 
@@ -68,6 +57,11 @@
 }
 .place__image {
   max-width: 100%;
+  width: 100%;
+}
+.place__paragraphs {
+  grid-column: 2/ 3;
+  grid-row: 2/ -1;
 }
 
 .place__paragraph {
@@ -97,14 +91,12 @@
   width: 248px;
   height: 48px;
   color: #ffffff;
-  padding-left: 0;
   align-self: flex-start;
   padding: 0;
   margin: 0;
   border: none;
   text-decoration: none;
   text-align: center;
-  
 }
 .place__botton:hover {
   cursor: url(../images/cursor.png), pointer;
@@ -121,40 +113,24 @@
   }
   .place {
     display: grid;
-    grid-template-columns: 340px 352px;
-    grid-template-rows: 46px 340px;
+    grid-template-columns: minmax(340px, 1fr) 1fr;
+    grid-template-rows: auto auto 1fr;
     column-gap: 28px;
     row-gap: 48px;
-    padding-top: 44px;
+    padding-top: 49px;
   }
   .place:first-child {
     padding-top: 0;
   }
 
-  .place:nth-child(3) {
-    grid-template-rows: 46px 340px;
-  }
-  .place:nth-child(4) {
-    grid-template-rows: 92px 340px;
-  }
-  .place:nth-child(5) {
-    padding-top: 230px;
-    padding-bottom: 92px;
-  }
-
   .place__title {
-    font-family: "Inter";
     font-size: 42px;
-    font-style: normal;
-    font-weight: 900;
     line-height: 46px;
     letter-spacing: 0em;
   }
 
   .place__paragraph {
-    font-family: "Inter";
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;

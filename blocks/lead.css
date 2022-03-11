@@ -63,3 +63,25 @@
     margin: 0;
   }
 }
+@media screen and (max-width: 320px) {
+  .lead {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .lead__title {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .lead__subtitle {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 16 0px 16;
+  }
+  .lead__image {
+    max-width: 320px;
+
+    margin: 0;
+  }
+}
