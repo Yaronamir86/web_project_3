@@ -13,7 +13,9 @@
   line-height: 16px;
   letter-spacing: 0em;
   text-align: right;
+  margin: 0;
 }
+
 @media screen and (max-width: 320px) {
   .footer {
     padding-top: 64px;
