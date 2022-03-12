@@ -136,7 +136,7 @@
     letter-spacing: 0em;
   }
 }
-@media screen and (min-width: 320px) and (max-width:680px){
+@media screen and (min-width: 320px) and (max-width: 680px) {
   .places {
     max-width: 100%;
     padding-top: 62px;
@@ -155,7 +155,7 @@
     padding-top: 50px;
     padding-bottom: 0;
     gap: 30px;
-}
+  }
 }
 @media screen and (max-width: 320px) {
   .places {
@@ -210,7 +210,5 @@
     padding-left: 16px;
     padding-right: 16px;
     align-self: center;
-    
   }
-
 }
