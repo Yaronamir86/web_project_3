@@ -63,6 +63,7 @@
     margin: 0;
   }
 }
+
 @media screen and (max-width: 320px) {
   .lead {
     max-width: 100%;
@@ -96,5 +97,19 @@
     max-width: 320px;
 
     margin: 0;
+  }
+}
+@media screen and (min-width: 321px) and (max-width:660px){
+  .lead__title{
+    max-width: 288px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 }
