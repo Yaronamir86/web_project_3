@@ -33,7 +33,6 @@
 }
 
 .cover__title {
-  font-family: "Inter";
   font-size: 72px;
   font-style: normal;
   font-weight: 900;
@@ -46,7 +45,6 @@
 }
 
 .cover__subtitle {
-  font-family: "Inter";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -59,7 +57,6 @@
 }
 
 .cover__subtitle-item {
-  font-family: "Inter";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +67,6 @@
 }
 
 .cover__button {
-  font-family: "Inter";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -102,7 +98,7 @@
   .cover {
     max-width: 320px;
     margin-top: 64px;
-    background-size: cover;
+
     background-repeat: no-repeat;
     padding-top: 0;
     padding-bottom: 0;
@@ -133,7 +129,6 @@
     max-width: 320px;
     margin: 0;
     margin-top: 64px;
-    background-size: cover;
     background-repeat: no-repeat;
     padding-top: 0;
     padding-bottom: 0;

@@ -8,7 +8,6 @@
 }
 
 .place__title {
-  font-family: "Inter";
   font-size: 72px;
   font-style: normal;
   font-weight: 900;
@@ -25,7 +24,6 @@
 }
 
 .place__url-heading {
-  font-family: "Inter";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +36,6 @@
 }
 
 .place__artist {
-  font-family: "Inter";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -59,7 +56,6 @@
 }
 
 .place__paragraph {
-  font-family: "Inter";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -67,6 +63,7 @@
   letter-spacing: 0em;
   max-width: 100%;
   padding-top: 25px;
+  margin: 0;
 }
 
 .place__paragraph:first-child {
@@ -74,7 +71,6 @@
 }
 
 .place__button {
-  font-family: "Inter";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -93,18 +89,17 @@
   text-align: center;
 }
 
-.place__botton:hover {
+.place__button:hover {
   cursor: url(../images/cursor.png), pointer;
+  background: #0063d2;
 }
 
 @media screen and (max-width: 768px) {
   .place {
-    display: grid;
     grid-template-columns: minmax(150px, 1fr) 1fr;
     grid-template-rows: auto auto 1fr;
     column-gap: 28px;
-    row-gap: 48px;
-    padding-top: 13px;
+    padding-bottom: 72px;
   }
 
   .place:first-child {
